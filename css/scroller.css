@@ -1,0 +1,40 @@
+.scroller-wrap {
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	overflow: hidden;
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	border: 1px solid #efefef;
+}
+
+.scroller-body {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: -17px;
+	overflow-y: auto;
+}
+
+.scroller-body ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.scroller-body ul li {
+	font-size: 50px;
+	height: 60px;
+	line-height: 60px;
+	color: #ccc;
+	background: #f9f9f9;
+}
+
+.scroller-body ul li.selected {
+	font-size: 80px;
+	position: absolute;
+	top: 120px;
+	font-weight: bold;
+	color: #333;
+}

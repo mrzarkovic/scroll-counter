@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="scroller">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link type="text/css" rel="stylesheet" href="css/scroller.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body ng-controller="MainController">
+	<div class="scroller-wrap">
+		<div class="scroller-body" id="scroller-body">
+			<div class="scrollable-content">
+				<ul>
+					<li></li>
+					<li></li>
+					<li data-order="{{$index}}" class="scrollable-item" ng-repeat="i in getNumber(number) track by $index">{{$index + 1}}</li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/scroll-counter.js"></script>
+</body>
+</html>
